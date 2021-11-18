@@ -1,0 +1,52 @@
+.app-header-dialog{
+  padding-left: 0%;
+}
+
+.header-without-margin{
+  margin-left:-15px;
+  margin-right: -15px;
+}
+
+.app-form-header{
+  color: #c2185b;
+  /* box-shadow: 1px 0px 0px  #cccccc; */
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 5%), 0px 6px 10px 0px rgb(0 0 0 / 5%), 0px 1px 18px 0px rgb(0 0 0 / 6%);
+}
+
+.icon-display {
+  transform: scale(1.5);
+}
+
+@media (max-width: 900px) and (min-width: 543.4px){ /*Agarra en 437  - Pantalla Media*/
+
+  #responsive-title{
+    font-size: 140% !important;
+    /* Ya no es necesario el padding left ya que el ícono de hamburguesa ya no estará en el lado izquierdo del título */
+    /* padding-left: 7% !important; */
+  }
+  #responsive-header{
+    height: 51px;
+    width: auto;
+    /* Ya no es necesario el padding left ya que el ícono de hamburguesa ya no estará en el lado izquierdo del título */
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+}
+.sm-legend{
+  font-size: 12px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 543.4px){ /*Pantalla muy pequenha */
+
+  #responsive-title{
+    font-size: 120% !important;
+    /* Ya no es necesario el padding left ya que el ícono de hamburguesa ya no estará en el lado izquierdo del título */
+    /* padding-left: 10% !important;
+    padding-right: 6% !important; */
+  }
+  #responsive-header{
+    min-height: 51px;
+    height: auto!important;  /*Cuando el titulo del dialog es extenso*/
+  }
+}

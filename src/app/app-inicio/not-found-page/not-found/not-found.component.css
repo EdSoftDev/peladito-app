@@ -1,0 +1,9 @@
+/* CSS only for examples not required for centering */
+.contenedor404 {
+    padding-top: 40px;
+    height: 100%!important;
+    background-color: #ededed;
+}
+a{
+    background-color: #ededed;
+}

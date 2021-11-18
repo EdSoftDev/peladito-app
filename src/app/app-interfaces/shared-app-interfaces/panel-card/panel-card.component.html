@@ -1,0 +1,11 @@
+<mat-card class="mb-2 card-panel" [ngClass]="{'card-bg-blue': card.bgAzul, 'card-bg-green': !card.bgAzul}">
+    <mat-card-header class="card-panel-header">
+        <div mat-card-avatar class="my-auto">
+            <mat-icon class="icon-display">{{card.icon}}</mat-icon>
+        </div>
+        <mat-card-title class="mb-0 medium">{{card.nombre}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{card.descripcion}}</p>
+    </mat-card-content>
+</mat-card>

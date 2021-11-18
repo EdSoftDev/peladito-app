@@ -1,0 +1,82 @@
+<p>
+    <mat-toolbar color="primary">
+        <!-- <span><img [routerLink]="['/sistema']" src="assets/img/logotipo-cibercont-blanco1.png" alt=""></span> -->
+        <a class="p-5 d-none d-md-inline"
+            href="sistema">
+            <img  [routerLink]="['/sistema']"
+                src="assets/img/Logotipo2.png"
+                width="125"
+                alt=""
+                loading="lazy">
+        </a>
+        <button mat-icon-button
+                class="ms-0 ms-md-5">
+            <mat-icon class="" (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <a class="d-inline d-md-none" href="sistema">
+            <img  [routerLink]="['/sistema']"
+                src="assets/img/Logotipo2.png"
+                width="35"
+                height="30"
+                alt=""
+                loading="lazy">
+        </a>
+        <span class="example-spacer"></span>
+        <button mat-icon-button
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                <mat-icon class="icon-display">account_circle</mat-icon>
+        </button>
+        <div class="dropdown-menu pt-0">
+            <div class="container">
+                <div class="row bg-blue pt-2 text-white">
+                    <div class="col-3 text-center my-auto">
+                        <mat-icon class="icon-display">account_circle</mat-icon>
+                    </div>
+                    <div class="col-9">
+                        <p>USUARIO</p>
+                        <p class="email-text">usuario@cibercont.com</p>
+                    </div>
+                </div>
+            </div>
+            <a class="dropdown-item" href="">Cerrar sesión</a>
+            <a class="dropdown-item" href="/home">Home</a>
+        </div>
+    </mat-toolbar>
+</p>
+<mat-sidenav-container class="navbar-container">
+    <mat-sidenav  #sidenav mode="push"
+                class="row bg-white pl-3">
+        <div class="col">
+            <!-- #region cabecera menu lateral -->
+            <div class="row d-flex justify-content-around align-items-center mt-3 mb-3">
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <mat-icon class="icon-display-work" color="primary">work</mat-icon>
+                </div>
+                <div class="col-8 d-flex flex-column justify-content-center align-items-start">
+                    <p>
+                        <strong class="text-dark fs-5">DECO ART S.A.</strong>
+                    </p>
+                    <p class="text-secondary fs-6">10420366871</p>
+                </div>
+                <div class="col-12">
+                    <mat-selection-list [multiple]="false">
+                        <mat-list-option class="cibercont-module">
+                            <a (click)="sidenav.toggle()"
+                                [routerLink]="['./venta']"
+                                routerLinkActive="router-link-active"
+                                class="d-flex align-items-center" href="">
+                                <mat-icon class="mx-2">build_circle</mat-icon>
+                                <span class="align-text-bottom">CONFIGURACIÓN PREVIA</span>
+                            </a>
+                        </mat-list-option>
+                    </mat-selection-list>
+                </div>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="cibercont-app-primary container-fluid">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

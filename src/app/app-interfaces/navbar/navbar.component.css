@@ -1,0 +1,83 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.navbar-container {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav {
+  width: 350px;
+}
+.bg-lightBlue{
+  background-color: #e3eef6;
+}
+.color-gris{
+color: #adadad
+}
+:host ::ng-deep .side-custom.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #008aca;
+}
+:host ::ng-deep .side-custom .mat-select-arrow{
+  color: #008aca;
+}
+:host ::ng-deep .side-custom .mat-form-field-label{
+    color: #008aca;
+}
+.color-blue{
+    color: #0d55a0;
+}
+.btn-quick-access {
+  background-color: #fff;
+  color: #17b8ae;
+  border: solid 2px #17b8ae;
+  border-radius: 10%;
+}
+.btn-quick-access:hover{
+    background-color: #17b8ae;
+    color: #fff;
+}
+.cibercont-module a{
+    text-decoration: none;
+    color: #0d55a0;
+}
+
+.cibercont-module:hover{
+    background-color: #0d55a0;
+}
+
+.cibercont-module:hover a{
+  color: #fff;
+}
+/* :host ::ng-deep .mat-list-option:hover{
+  color: #fff
+} */
+.bg-blue{
+  background-color: #0d55a0;
+}
+.email-text{
+  margin-top: -15px !important;
+}
+.cibercont-module{
+  border-top: solid 1px #0d55a0;
+}
+.cibercont-last-module{
+  border-bottom: solid 1px #0d55a0;
+}
+.icon-display {
+  transform: scale(1.5);
+}
+.icon-display-work {
+  transform: scale(3);
+}
+@media (max-width: 599px){
+  .navbar-container {
+    top: 56px;
+  }
+}
+::ng-deep .mat-form-field-wrapper{
+  padding-bottom: 0em !important;
+}

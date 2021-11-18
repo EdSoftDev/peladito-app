@@ -1,0 +1,13 @@
+<div [ngClass]="{'text-start header-without-margin app-form-header' : !modoDialog, 'app-header-dialog text-center' : modoDialog}"
+      class="row"
+      id="responsive-header">
+  <div class="col-12 my-auto">
+      <h3 id="responsive-title"
+          class="pt-2">
+          <small class="d-flex align-items-center py-2">
+            <mat-icon class="icon-display mx-2">{{icon}}</mat-icon>
+            <span class="fs-4 mx-2">{{title}}</span>
+          </small>
+      </h3>
+  </div>
+</div>

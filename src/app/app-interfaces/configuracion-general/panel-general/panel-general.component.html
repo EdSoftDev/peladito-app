@@ -1,0 +1,14 @@
+<app-app-form-header [title] ="'PANEL CONFIGURACIÓN GENERAL'" [icon]="'build_circle'"></app-app-form-header>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+      <div class="col-12 pb-2">
+          <p class="fs-5 text-success"><strong>OPERACIONES</strong></p>
+      </div>
+          <app-panel-card *ngFor="let card of listaAcciones"
+                          class="col-12 col-sm-6 col-md-6 col-lg-3"
+                          [card]="card"
+                          [routerLink]="[card.ruta]">
+          </app-panel-card>
+  </div>
+</div>
