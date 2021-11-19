@@ -19,19 +19,19 @@ export class PanelGeneralComponent implements OnInit {
       nombre: 'Unidad de medida',
       icon: 'feed',
       bgAzul: false,
-      ruta: "../"
+      ruta: "../unidad_medida"
     },
     {
       nombre: 'Materiales',
       icon: 'content_copy',
       bgAzul: false,
-      ruta: "../"
+      ruta: "../materiales"
     },
     {
       nombre: 'Proveedores',
       icon: 'people_alt',
       bgAzul: false,
-      ruta: "../"
+      ruta: "../proveedores"
     }
   ];
   constructor(public dialog: MatDialog,
