@@ -5,6 +5,7 @@ import { AngularMaterialModule } from 'src/app/core/angular-material/angular-mat
 import { ConfiguracionGeneralRoutingModule } from './configuracion-general-routing.module';
 import { PanelGeneralComponent } from './0_panel-general/panel-general.component';
 
+import { GestionUsuariosComponent } from './1_gestion-usuarios/gestion-usuarios.component';
 import { UnidadMedidaComponent } from './2_unidad-medida/unidad-medida.component';
 import { MaterialesComponent } from './3_materiales/materiales.component';
 import { ProveedoresComponent } from './4_proveedores/proveedores.component';
@@ -17,7 +18,8 @@ import { SharedAppInterfacesModule } from '../shared-app-interfaces/shared-app-i
     UnidadMedidaComponent,
     PanelGeneralComponent,
     MaterialesComponent,
-    ProveedoresComponent
+    ProveedoresComponent,
+    GestionUsuariosComponent
   ],
   imports: [
     CommonModule,

@@ -13,7 +13,7 @@ export class PanelGeneralComponent implements OnInit {
       nombre: 'Gestión usuarios',
       icon: 'person',
       bgAzul: false,
-      ruta: "../"
+      ruta: "../gestion_usuarios"
     },
     {
       nombre: 'Unidad de medida',
