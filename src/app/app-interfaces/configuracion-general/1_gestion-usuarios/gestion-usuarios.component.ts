@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { UserService } from '../services/user.service';
 import { User } from '../models/user.model';
-
 import { EditGestionUsuariosComponent } from '../1.1_edit-gestion-usuarios/edit-gestion-usuarios.component';
 @Component({
   selector: 'app-gestion-usuarios',
@@ -19,6 +18,7 @@ export class GestionUsuariosComponent implements OnInit {
     'password',
     'acciones'
   ];
+
   users: User[] = [];
 
   constructor(
@@ -32,7 +32,6 @@ export class GestionUsuariosComponent implements OnInit {
   fetchProducts() {
     this.userService.getUsers()
     .subscribe(users=> {
-      console.log(users);
       this.users = users;
     })
   }

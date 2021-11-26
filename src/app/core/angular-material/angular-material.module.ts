@@ -7,7 +7,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -24,6 +23,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 const MaterialComponents = [
@@ -36,7 +36,6 @@ const MaterialComponents = [
   MatSelectModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatDividerModule,
   MatButtonModule,
   MatExpansionModule,
   MatIconModule,
@@ -51,7 +50,8 @@ const MaterialComponents = [
   MatSnackBarModule,
   MatCheckboxModule,
   MatRadioModule,
-  MatTableModule
+  MatTableModule,
+  MatDividerModule
 ];
 
 @NgModule({

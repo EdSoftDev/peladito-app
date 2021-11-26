@@ -1,6 +1,7 @@
 .table-container {
   overflow: auto;
 }
+
 th.mat-column-nombres, td.mat-column-nombres {
   padding-left: 11rem;
 }
@@ -8,6 +9,7 @@ th.mat-column-nombres, td.mat-column-nombres {
 .table-item {
   padding: 10px;
 }
+
 .table-title {
   padding: 10px;
 }
