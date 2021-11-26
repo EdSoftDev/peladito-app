@@ -23,6 +23,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatTableModule} from '@angular/material/table';
 
 
 const MaterialComponents = [
@@ -49,7 +50,8 @@ const MaterialComponents = [
   MatListModule,
   MatSnackBarModule,
   MatCheckboxModule,
-  MatRadioModule
+  MatRadioModule,
+  MatTableModule
 ];
 
 @NgModule({
