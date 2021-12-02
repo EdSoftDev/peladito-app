@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularMaterialModule } from 'src/app/core/angular-material/angular-material.module';
-import { FormsModule } from '@angular/forms';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ConfiguracionGeneralRoutingModule } from './configuracion-general-routing.module';
 import { PanelGeneralComponent } from './0_panel-general/panel-general.component';
@@ -29,7 +30,9 @@ import { SharedAppInterfacesModule } from '../shared-app-interfaces/shared-app-i
     ConfiguracionGeneralRoutingModule,
     AngularMaterialModule,
     SharedModule,
-    SharedAppInterfacesModule
+    SharedAppInterfacesModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ConfiguracionGeneralModule { }

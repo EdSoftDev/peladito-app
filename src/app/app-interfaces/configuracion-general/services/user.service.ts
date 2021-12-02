@@ -20,4 +20,12 @@ export class UserService {
   createUser(user: User) {
     return this.http.post(this.urlEndPoint, user);
   }
+
+  editUser(user: User) {
+    return this.http.put(`${this.urlEndPoint}/${user.id}`, user);
+  }
+
+  deleteUser(id: string){
+    return this.http.delete(`${this.urlEndPoint}/${id}`);
+  }
 }

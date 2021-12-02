@@ -1,4 +1,5 @@
 .table-container {
+  max-height: calc(90vh - 12rem);
   overflow: auto;
 }
 
