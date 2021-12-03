@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MetricUnitService } from '../../configuration-general/service/metric-unit.service';
+import { metricUnit } from '../models/metricUnit.model';
 @Component({
   selector: 'app-unidad-medida',
   templateUrl: './unidad-medida.component.html',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnidadMedidaComponent implements OnInit {
 
-  constructor() { }
+  metricUnit :metricUnit[] =[];
+ 
+  constructor(
+      private metricUnitService : MetricUnitService
+  ) { }
 
   ngOnInit(): void {
+    this.fetchMetricUnit();
+  }
+
+  fetchMetricUnit(){
+    // this.metricUnitService.getMetricUnit();
+    // .subscribe(metricUnit => {
+    //   this.metricUnit = metricUnit;
+    //   }
+    // )
   }
 
 }
