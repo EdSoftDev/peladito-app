@@ -28,10 +28,10 @@ export class GestionUsuariosComponent implements OnInit {
     public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.fetchProducts();
+    this.fetchUsers();
   }
 
-  fetchProducts() {
+  fetchUsers() {
     this.userService.getUsers()
     .subscribe(users=> {
       this.users = users;
@@ -44,7 +44,7 @@ export class GestionUsuariosComponent implements OnInit {
       disableClose: false,
       panelClass: 'myapp-no-padding-dialog'
     }).afterClosed().subscribe(result => {
-      this.fetchProducts();
+      this.fetchUsers();
     });
   }
 
@@ -55,7 +55,7 @@ export class GestionUsuariosComponent implements OnInit {
       disableClose: false,
       panelClass: 'myapp-no-padding-dialog'
     }).afterClosed().subscribe(result => {
-      this.fetchProducts();
+      this.fetchUsers();
     });
   }
 
@@ -70,7 +70,7 @@ export class GestionUsuariosComponent implements OnInit {
           this.userService.deleteUser(id)
           .subscribe(users=> {
             alert("¡Eliminado correctamente!");
-            this.fetchProducts();
+            this.fetchUsers();
           })
         } else {
         }

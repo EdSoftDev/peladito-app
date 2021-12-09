@@ -1,2 +1,4 @@
 <app-app-form-header [title] ="'CONFIGURACIÓN UNIDAD DE MEDIDA'" [icon]="'article'"></app-app-form-header>
-
+<div *ngFor="let metricUnit of metricUnits">
+  <p>{{metricUnit.nombre}}</p>
+</div>

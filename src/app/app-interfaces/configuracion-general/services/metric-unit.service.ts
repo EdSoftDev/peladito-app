@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { metricUnit } from '../models/metricUnit.model';
+import { MetricUnit } from '../models/metric-unit.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MetricUnitService {
+
   private server:string = 'http://localhost:8080/api/'
   private urlEndPoint:string = this.server + 'metricUnits';
 
@@ -13,11 +14,11 @@ export class MetricUnitService {
     private http:HttpClient
   ) { }
 
-  getMetricUnit(){
-    return this.http.get<metricUnit[]>(this.urlEndPoint);
+  getMetricUnits() {
+    return this.http.get<MetricUnit[]>(this.urlEndPoint);
   }
 
-  createUser(metricUnit : metricUnit){
+  createUser(metricUnit : MetricUnit){
     return this.http.post(this.urlEndPoint, metricUnit);
   }
 
