@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MetricUnitService } from '../services/metric-unit.service';
 import { MetricUnit } from '../models/metric-unit.model';
+import { ConfirmationDialogComponent } from '../../shared-app-interfaces/confirmation-dialog/confirmation-dialog.component';
 @Component({
   selector: 'app-unidad-medida',
   templateUrl: './unidad-medida.component.html',
@@ -11,7 +13,8 @@ export class UnidadMedidaComponent implements OnInit {
   metricUnits :MetricUnit[] = [];
 
   constructor(
-      private metricUnitService : MetricUnitService
+      private metricUnitService : MetricUnitService,
+      public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -24,6 +27,26 @@ export class UnidadMedidaComponent implements OnInit {
       this.metricUnits = metricUnits;
       console.log(metricUnits);
     })
+  }
+
+  openModalDelete(id:string): void{
+    this.dialog
+      .open(ConfirmationDialogComponent, {
+        data: 'Hola, ¿Seguro que deseas eliminar el usuario?'
+      })
+      .afterClosed()
+      .subscribe((confirmado: Boolean)=>{
+        if(confirmado){
+          this.metricUnitService.deleteMetricUnit(id)
+          .subscribe(users=> {
+            alert("Eliminado correctamente");
+            this.fetchMetricUnits();
+          })
+        }else{
+
+          }
+        }
+      );
   }
 
 }

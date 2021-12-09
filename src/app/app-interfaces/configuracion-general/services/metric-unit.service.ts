@@ -18,8 +18,15 @@ export class MetricUnitService {
     return this.http.get<MetricUnit[]>(this.urlEndPoint);
   }
 
-  createUser(metricUnit : MetricUnit){
+  createMetricUnit(metricUnit : MetricUnit){
     return this.http.post(this.urlEndPoint, metricUnit);
+  }
+  editMetricUnit(metricUnit: MetricUnit){
+      return this.http.put(`${this.urlEndPoint}/${metricUnit.id}`, metricUnit);
+  }
+
+  deleteMetricUnit(id: string){
+    return this.http.delete(`${this.urlEndPoint}/${id}`);
   }
 
 }
