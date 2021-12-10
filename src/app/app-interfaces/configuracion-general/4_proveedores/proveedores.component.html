@@ -1,1 +1,4 @@
-<p>proveedores works!</p>
+<app-app-form-header [title]="'CONFIGURACION DE PROVEEDORES'" [icon]="'ARTICLE'"></app-app-form-header>
+<div *ngFor="let proveedor of proveedores">
+    <p>{{proveedor.nombres}}</p>
+</div>

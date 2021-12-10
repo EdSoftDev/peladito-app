@@ -25,7 +25,7 @@ export class UnidadMedidaComponent implements OnInit {
     this.metricUnitService.getMetricUnits()
     .subscribe(metricUnits=> {
       this.metricUnits = metricUnits;
-      console.log(metricUnits);
+
     })
   }
 

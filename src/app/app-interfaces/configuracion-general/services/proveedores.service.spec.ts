@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MetricUnitService } from './metric-unit.service';
+import { ProveedoresService } from './proveedores.service';
 
-describe('MetricUnitService', () => {
-  let service: MetricUnitService;
+describe('ProveedoresService', () => {
+  let service: ProveedoresService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MetricUnitService);
+    service = TestBed.inject(ProveedoresService);
   });
 
   it('should be created', () => {
