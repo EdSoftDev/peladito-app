@@ -7,7 +7,7 @@ import { Proveedor } from '../models/proveedores.models';
 })
 export class ProveedoresService {
   private server: string = 'http://localhost:8080/api/'
-  private urlEndPoint: string = this.server + 'proveedores';
+  private urlEndPoint: string = this.server + 'providers';
 
   constructor(
     private http:HttpClient

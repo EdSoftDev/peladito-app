@@ -1,0 +1,66 @@
+.table-container {
+  max-height: calc(90vh - 12rem);
+  overflow: auto;
+}
+
+th.mat-column-nombres, td.mat-column-nombres {
+  padding-left: 11rem;
+}
+
+.table-item {
+  padding: 10px;
+}
+
+.table-title {
+  padding: 10px;
+}
+
+/* Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
+  .table-title {
+    font-size: 0.75rem !important;
+  }
+  .table-item {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .table-title {
+    font-size: 0.75rem !important;
+  }
+  .table-item {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .table-title {
+    font-size: 0.85rem !important;
+  }
+  .table-item {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .table-title {
+    font-size: 0.90rem !important;
+  }
+  .table-item {
+    font-size: 0.85rem !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .nombre_producto {
+      font-size: 1rem !important;
+  }
+  .valor_precio {
+      font-size: 0.95rem !important;
+  }
+}

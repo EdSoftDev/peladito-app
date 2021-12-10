@@ -15,6 +15,7 @@ import { ProveedoresComponent } from './4_proveedores/proveedores.component';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SharedAppInterfacesModule } from '../shared-app-interfaces/shared-app-interfaces.module';
+import { EditUnidadMedidaComponent } from './2.1_edit-unidad-medida/edit-unidad-medida.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SharedAppInterfacesModule } from '../shared-app-interfaces/shared-app-i
     MaterialesComponent,
     ProveedoresComponent,
     GestionUsuariosComponent,
-    EditGestionUsuariosComponent
+    EditGestionUsuariosComponent,
+    EditUnidadMedidaComponent
   ],
   imports: [
     CommonModule,
